@@ -3,16 +3,19 @@
     "description": "my ext",
     "version": "0.1.0",
     "manifest_version": 2,
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvDwzRX8qHjQ3yXMzwiMfC5b4zDN3HL8gLobUt2ZU6oPDj5X/AgJZx8IBHzxnputJOTYVdB2GGQUABO0M7KM20jSM+sXaSKMj1yNBebzrm9b8cntOOo3vziz2NJCWl+RX0Wvfe8l3WfoUmw+yGT77MU4eoXw0IYamcBUwYYyEs54GbcNYABBVF8SaGXJqvwSlQuybmL/uwVKVP9x0kNSu1Z6+D3NSk+ZSa1LRNjKrtkGZol2VmKvomdxgZqcg7KAmdH9+mtV4sxowRipZV6S6nIa1jsbegHhjniaMW/ORIFTIWC6byuuQZ8qgq+3IDNvB46ISfptPtRqlNWLMkYgEQwIDAQAB",
     "background": {
-        "scripts": ["./background.js"]
+        "scripts": [
+            "./background.js",
+            "./jsrsasing-all-min.js"
+        ]
     },
     "options_page": "./options.html",
     "browser_action": {
         "default_popup": "popup.html"
     },
     "permissions": [
-        "tabs",
-        "https://www.google.com/*",
-        "storage"
+        "identity",
+        "identity.email"
     ]
 }
